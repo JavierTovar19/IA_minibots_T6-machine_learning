@@ -1,7 +1,42 @@
 Ejercicios:
 ### 1. Considere la figura 6.1. Conforme un data set con resultados de 50.000 multiplicaciones de matrices 2 X 2, generadas aleatoriamente con números enteros entre -20 y 20. Una vez entrenado el modelo, úselo con 10 ejemplos y compare los resultados con los que se producen al realizar la operación analíticamente.Haga un cálculo de que es más costoso computacionalmente.
+
+Debido a que el ejercicio requiere la creación de un dataset con resultados de 50.000 multiplicaciones de matrices 2 X 2, generadas aleatoriamente con números enteros entre -20 y 20, se plantea la solución de este ejercicio a partir del uso de dataframes, con el uso de pandas y numpy, se crean las matrices aleatorias (cada columna es un elemento de la matriz) y se realiza la multiplicación de matrices; el resultado de la matriz se divide en 2 datasets para entrenar y testear el modelo.
+
+El código se presenta en dos archivos:
+ - [P1_matrix_multiplication_light.ipynb](Codigo/P1_matrix_multiplication_light.ipynb)
+ - [P1_matrix_multiplication_Dense.ipynb](Codigo/P1_matrix_multiplication_Dense.ipynb)
+
+En cada uno de ellos, el entrenamiento tiene enfoques diferentes, en el primero, se usa una red neuronal con una sola capa oculta y un entrenamiento intensivo, el cual tarda aproximadamente 2 horas, mientras que en el segundo, se usa una red neuronal con múltiples capas ocultas y un entrenamiento con menor cantidad de epocas, el cual demora una cantidad de tiempo significativamente menor y ofrece un error promedio menor, en un principio puede parecer conveniente usar el segundo enfoque, sin embargo, el primer enfoque ofrece un resultado que demora menos tiempo en alcanzar un valor aceptable de error, sin embargo, el entrenamiento deberia realizarse una unica vez, un modelo con mayor tiempo de entrenamiento, es mas rentable a largo plazo, ya que el tamaño es menor y los resultados similares.
+
+Resultados del modelo denso:
+![Resultados del modelo denso](.img/P1_dense.png)
+
+Resultados del modelo ligero:
+![Resultados del modelo ligero](.img/P1_light.png)
+
+Al comparar los resultados, la ventaja obtenida durante la prueba del modelo pese a la disminución del tiempo de entrenamiento, es mínima. y el tamaño de cada uno de los modelos exportados, difieren en un factor de 1 a 4, es posible que un entrenamiento mas intensivo del modelo ligero, termine obteniendo un resultado mas aceptable, (el entrenamiento de 5000 epocas tardo 2 horas).
+
 ## **En alguno de los siguientes problemas, usar datos de alguna entidad gubernamental.**
 ### 2. Estudie el algoritmo SVM con todo detalle, mejore su documentación y con base en el haga cambios para una aplicación.
 ### 3. Estudie el algoritmo de K- Nearest, con todo detalle mejore su documentación y con base en el haga cambios para una aplicación.
+
+Para este ejercicio, se usan los datos de un dataset de seaborn, el cual contiene información sobre tamaños y pesos de diferentes pinguinos, y se plantea el uso de la especie o el sexo como grupo de clasificación.
+
+El archivo **[P3_KNN.ipynb](Codigo/P3_KNN.ipynb)** contiene el desarrollo del ejercicio, en el cual se detallan las funciones y agrupaciones realizadas, donde los puntos de entrenamiento se presentan como círculos claros, las clasificaciones correctas, como triangulos, y las clasificaciones erroneas como 'x' oscuras.
+
+Se presentan los resultados de la clasificación del sexo del pingüino, con 7 vecinos, en donde se presenta una falsa clasificación de 5 pingüinos.
+
+![Tercer ejercicio matriz sex](.img/P3_matriz_confusión_sex.png)
+
+**Los ejes de las graficas estan normalizados**
+![Tercer ejercicio clasificación por sexo](.img/P3_sex.png)
+
+Y adicionalmente, la clasificción por especie, en donde se tienen 3 especies, con un unico error de clasificación.
+![Tercer ejercicio matriz especie](.img/P3_matriz_confusión_specie.png)
+
+**Los ejes de las graficas estan normalizados**
+![Tercer ejercicio clasificación por especie](.img/P3_specie.png)
+
 ### 4. Estudie el algoritmo de árboles de decisión, con todo detalle mejore su documentación y con base en el haga cambios para una aplicación.
 ### 5. Estudie el algoritmo de Bayes ingenuo y haga un ejemplo bien documentado. De los últimos 4 ejercicios haga 3. Nuevamente, si tiene otro problema que le parezca interesante en el que se use ML, lo puede cambiar, por uno de los ejercicios planteados.
