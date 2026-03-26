@@ -39,4 +39,20 @@ Y adicionalmente, la clasificción por especie, en donde se tienen 3 especies, c
 ![Tercer ejercicio clasificación por especie](.img/P3_specie.png)
 
 ### 4. Estudie el algoritmo de árboles de decisión, con todo detalle mejore su documentación y con base en el haga cambios para una aplicación.
+
+Para el desarrollo del código en Python no se utilizó una librería externa para la obtención de datos, sino que se generó un conjunto de datos sintético mediante la librería NumPy y se organizó utilizando pandas.
+
+El algoritmo de Árbol de Decisión es un modelo de aprendizaje supervisado usado en clasificación y regresión, que organiza decisiones en forma de árbol con nodos (condiciones), ramas (decisiones) y hojas (resultados). 
+
+Funciona dividiendo los datos en subconjuntos más homogéneos usando criterios como el índice Gini o la entropía. Es popular por su fácil interpretación y se aplica en áreas como créditos, diagnóstico médico y segmentación de clientes. En este trabajo se implementó con datos normalizados y se evaluó con una matriz de confusión y visualización de resultados. Estos fueron los resultados, en el cual se presenta una falsa clasificacion de 9.
+
+
+<img width="130" height="51" alt="{4F2FE173-D93D-4502-9A16-EBC1CDFB44FB}" src="https://github.com/user-attachments/assets/815e4293-04e0-4095-8160-e55f3e2a529a" />
+
+
+<img width="564" height="583" alt="image" src="https://github.com/user-attachments/assets/953617ff-7216-478e-b1f0-133ddb9a20db" />
+
+
+Como mejora, se propone ajustar la profundidad del árbol para evitar sobreajuste y considerar métodos más robustos como Random Forest.
+
 ### 5. Estudie el algoritmo de Bayes ingenuo y haga un ejemplo bien documentado. De los últimos 4 ejercicios haga 3. Nuevamente, si tiene otro problema que le parezca interesante en el que se use ML, lo puede cambiar, por uno de los ejercicios planteados.
