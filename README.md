@@ -60,4 +60,27 @@ Como mejora, se propone ajustar la profundidad del árbol para evitar sobreajust
 El codigo se presenta en el siguiente archivo:
 [P4_ARBOL.ipynb](Codigo/P4_ARBOL.ipynb)
 
-### 5. Estudie el algoritmo de Bayes ingenuo y haga un ejemplo bien documentado. De los últimos 4 ejercicios haga 3. Nuevamente, si tiene otro problema que le parezca interesante en el que se use ML, lo puede cambiar, por uno de los ejercicios planteados.
+### 5. Estudie el algoritmo de Bayes ingenuo y haga un ejemplo bien documentado. 
+El algoritmo de Bayes ingenuo es un modelo de aprendizaje supervisado basado en el teorema de Bayes que calcula la probabilidad de que un dato pertenezca a una clase. 
+
+Asume independencia entre variables, lo que lo hace eficiente incluso con muchos datos. Se usa comúnmente en clasificación de spam. En este trabajo se aplicó a datos de texto convertidos en variables numéricas, evaluando su desempeño con una matriz de confusión. Los resultados muestran buena precisión y rapidez. 
+
+El codigo se presenta en el siguiente archivo:
+
+[P5_SPAM.ipynb](Codigo/P5_SPAM.ipynb)
+
+
+Como mejora, se sugiere usar suavizado de Laplace y técnicas como TF-IDF para mejorar el rendimiento.
+
+
+
+
+
+
+
+
+
+
+
+
+De los últimos 4 ejercicios haga 3. Nuevamente, si tiene otro problema que le parezca interesante en el que se use ML, lo puede cambiar, por uno de los ejercicios planteados.
