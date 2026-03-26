@@ -50,6 +50,8 @@ Funciona dividiendo los datos en subconjuntos más homogéneos usando criterios 
 <img width="130" height="51" alt="{4F2FE173-D93D-4502-9A16-EBC1CDFB44FB}" src="https://github.com/user-attachments/assets/815e4293-04e0-4095-8160-e55f3e2a529a" />
 
 
+Una representacion 3D seria el siguiente:
+
 <img width="564" height="583" alt="image" src="https://github.com/user-attachments/assets/953617ff-7216-478e-b1f0-133ddb9a20db" />
 
 
