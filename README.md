@@ -55,4 +55,7 @@ Funciona dividiendo los datos en subconjuntos más homogéneos usando criterios 
 
 Como mejora, se propone ajustar la profundidad del árbol para evitar sobreajuste y considerar métodos más robustos como Random Forest.
 
+El codigo se presenta en el siguiente archivo:
+[P4_ARBOL.ipynb](Codigo/P4_ARBOL.ipynb)
+
 ### 5. Estudie el algoritmo de Bayes ingenuo y haga un ejemplo bien documentado. De los últimos 4 ejercicios haga 3. Nuevamente, si tiene otro problema que le parezca interesante en el que se use ML, lo puede cambiar, por uno de los ejercicios planteados.
